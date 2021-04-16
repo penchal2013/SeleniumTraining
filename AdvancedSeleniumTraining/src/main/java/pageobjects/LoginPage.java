@@ -10,18 +10,18 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage
 {
-	public WebDriver driver;
+	public static WebDriver driver;
 	@FindBy(name="email")
-	WebElement userName_textbox;
+	public WebElement userName_textbox;
 	
 	@FindBy(xpath="//input[@id='pass']")
-	WebElement password_txtbox;
+	public WebElement password_txtbox;
 	
 	@FindBy(name="login")
-	WebElement logInButton;
+	public WebElement logInButton;
 	
 	@FindBy(linkText="Create New Account")
-	WebElement CreateNewAccountBtn;
+	public WebElement CreateNewAccountBtn;
 	
 	
 	public LoginPage(WebDriver driver)

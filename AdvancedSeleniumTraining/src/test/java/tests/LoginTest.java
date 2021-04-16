@@ -16,7 +16,7 @@ public class LoginTest extends TestBase
 	LoginPage lp=new LoginPage(driver);
 	
 	
-	@Test
+	@Test(priority=1)
 	public void loginTestCase() throws Exception
 	{
 		 extent.createTest("Test Case 1", "PASSED test case");
@@ -31,7 +31,7 @@ public class LoginTest extends TestBase
 		
 	}
 
-	@Test
+	@Test(priority=2)
 	public void TestCase2() throws Exception
 	{
 		ExtentTest test=extent.createTest("Test Case 2", "Failed test case");
@@ -40,6 +40,7 @@ public class LoginTest extends TestBase
          Assert.fail("fail");
 		
 	}
+	
 	
 	
 }
